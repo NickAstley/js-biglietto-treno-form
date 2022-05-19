@@ -31,7 +31,10 @@ const cancelButton = document.getElementById("bottoneCancel");
 submitButton.addEventListener("click", function() {
     const numeroKm = parseInt(inputKm.value);
     
-    if (isNaN(numeroKm)) {
+
+    if (!isNaN(inputName.value) || !inputName.value) {
+        alert("Inserisci un nome valido!");
+    } else if (isNaN(numeroKm)) {
         alert("Inserisci un valore numerico per i Km da percorrere!");
     } else if (numeroKm >= 1000) {
         alert("Non esistono tratte così lunghe!");
