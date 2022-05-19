@@ -8,8 +8,46 @@
     <meta name="description" content="Esercizio di display di un biglietto del treno con JS">
     <meta name="keywords" content="esercizio, biglietto, treno, JavaScript">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="bg-primary">
+    <main>
+        <h1 class="text-white text-uppercase text-center">Calcola il prezzo del tuo biglietto</h1>
+        <div class="container">
+            <div class="section sezioneOpzioniBiglietto">
+                <form class="row justify-content-center text-center py-3">
+                    <div class="col-auto">
+                        <div class="p-3">
+                            <label for="nomeUtente">Nome Cognome</label>
+                            <input class="rounded" type="text" name="nomeUtente">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="p-3">
+                            <label for="kmUtente">Km da percorrere</label>
+                            <input class="rounded" type="text" name="kmUtente">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="p-3">
+                            <label for="etaUtente">Fascia d'età</label>
+                            <select class="rounded" name="etaUtente" id="selezioneEta">
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="minorenne">Minorenne</option>
+                                <option value="over65">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="py-3">
+                            <button class="rounded" type="button" id="bottoneSubmit">Genera</button>
+                            <button class="rounded" type="button" id="bottoneCancel">Annulla</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
     <script src="js/main.css"></script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+:root {
+    --bs-primary: #B91450;
+    --bs-primary-rgb: 185,20,80;
+}
+
+input, select {
+    border-color: var(--bs-primary);
+}
+
+select {
+    height: 30px;
+    border-width: 2px;
+}
+
+label {
+    display: block;
+    color: var(--bs-primary);
+    margin-bottom: 1rem;
+}
+
+button {
+    color: var(--bs-primary);
+    background-color: #CCCCCC;
+    font-weight: bold;
+    border-width: 1px;
+}
+
+#bottoneSubmit {
+    border-color: #E08F47;
+}
+
+.section {
+    background-color: white;
+}
+
+.sezioneOpzioniBiglietto {
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
