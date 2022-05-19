@@ -12,9 +12,9 @@
 </head>
 <body class="bg-primary">
     <main>
-        <h1 class="text-white text-uppercase text-center">Calcola il prezzo del tuo biglietto</h1>
+        <h1 class="text-white text-uppercase text-center py-3">Calcola il prezzo del tuo biglietto</h1>
         <div class="container">
-            <div class="section sezioneOpzioniBiglietto">
+            <div class="section sezione-opzioni-biglietto">
                 <form class="row justify-content-center text-center py-3">
                     <div class="col-auto">
                         <div class="p-3">
@@ -31,7 +31,7 @@
                     <div class="col-auto">
                         <div class="p-3">
                             <label for="etaUtente">Fascia d'età</label>
-                            <select class="rounded" name="etaUtente" id="selezioneEta">
+                            <select class="rounded" name="etaUtente">
                                 <option value="maggiorenne">Maggiorenne</option>
                                 <option value="minorenne">Minorenne</option>
                                 <option value="over65">Over 65</option>
@@ -47,7 +47,47 @@
                 </form>
             </div>
         </div>
+        <div id="bigliettoComparsa" class="d-none">
+            <h2 class="text-white text-uppercase text-center py-3">Il tuo biglietto</h2>
+            <div class="container">
+                <div class="section p-3">
+                    <h4 class="text-uppercase">Dettaglio passeggeri</h4>
+                    <div class="row dettagli-biglietto mx-0">
+                        <div class="col bg-secondary">
+                            <div class="py-3">
+                                <h5 class="text-uppercase">Nome passeggero</h5>
+                                <span class="fw-bold" id="nomeUtente"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="py-3">
+                                <h6>Offerta</h6>
+                                <span id="tipologiaBiglietto"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="py-3">
+                                <h6>Carrozza</h6>
+                                <span id="numeroCarrozza"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="py-3">
+                                <h6>Codice CP</h6>
+                                <span id="codiceCP"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="py-3">
+                                <h6>Costo biglietto</h6>
+                                <span id="costoBiglietto"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <script src="js/main.css"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
